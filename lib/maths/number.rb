@@ -61,12 +61,14 @@ end
 
 def cycle_count
   return Float::INFINITY if self.number <= 0
-  if self.number == 1
-    1
-  elsif self.number == 2
-    2
+  return 1 if self.number == 1
+
+  if self.number.even?
+    self.number = self.calculate_half
+    1 + self.cycle_count
   else
-    8
+    self.number = self.thrice_n_plus_one
+    1 + self.cycle_count
   end
 end
 
