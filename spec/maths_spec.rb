@@ -119,6 +119,10 @@ it "should return INFINITY when given 0" do
   expect(number.cycle_count).to eq(Float::INFINITY)
 end
 
+it "should return INFINITY when given -1" do
+  number = Maths::Number.new(-1)
+  expect(number.cycle_count).to eq(Float::INFINITY)
+end
 
 
 
