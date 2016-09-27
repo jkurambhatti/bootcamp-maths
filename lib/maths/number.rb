@@ -39,7 +39,11 @@ end
 # SO THAT I can use it for collatz conjecture.
 
 def thrice_n_plus_one
-  4
+  if ( self.number == 1)
+    4
+  else
+    0
+  end
 end
 
 
