@@ -47,4 +47,13 @@ describe Maths::Number do
       expect(number.n!).to eq(Float::INFINITY)
     end
   end
+
+  # calculate half if the given integer is positive and even
+  describe "#calculate_half"  do
+    it "should return 2 when given 4" do
+      number = Maths::Number.new(4)
+      expect(number.calculate_half).to eq(2)
+    end
+  end
+
 end

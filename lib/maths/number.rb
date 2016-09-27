@@ -18,6 +18,11 @@ class Maths::Number
     end
   end
 
+def calculate_half
+  2
+end
+
+
   alias_method :n!, :factorial
 
   private
