@@ -39,10 +39,9 @@ end
 # SO THAT I can use it for collatz conjecture.
 
 def thrice_n_plus_one
-  if ( self.number == 1)
-    4
-  elsif ( self.number == 5)
-    16
+  return 0 if self.number < 1 #short hand notation
+  if ( self.number.odd? )
+    (3 * self.number) + 1
   else
     0
   end
