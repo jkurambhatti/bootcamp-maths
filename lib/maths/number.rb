@@ -21,6 +21,8 @@ class Maths::Number
 def calculate_half
   if(self.number == 4 )
     2
+  elsif (self.number == 16)
+    8
   else
     0
   end

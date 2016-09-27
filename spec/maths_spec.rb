@@ -61,6 +61,11 @@ describe Maths::Number do
       expect(number.calculate_half).to eq(0)
     end
 
+   it "should return 8 when given 16 " do
+      number = Maths::Number.new(16)
+      expect(number.calculate_half).to eq(8)
+    end
+
   end
 
 end
