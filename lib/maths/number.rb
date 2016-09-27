@@ -19,10 +19,8 @@ class Maths::Number
   end
 
 def calculate_half
-  if(self.number == 4 )
-    2
-  elsif (self.number == 16)
-    8
+  if(self.number.even? && self.number >= 2)
+    self.number / 2
   else
     0
   end
