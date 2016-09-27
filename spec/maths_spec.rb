@@ -104,6 +104,12 @@ describe "#cycle_count" do
     expect(number.cycle_count).to eq(1)
   end
 
+  it "should return 2 when given 2" do
+    number = Maths::Number.new(2)
+    expect(number.cycle_count).to eq(2)
+  end
+
+
 end
 
 

@@ -60,7 +60,11 @@ end
 
 
 def cycle_count
-  1
+  if self.number == 1
+    1
+  else
+    2
+  end
 end
 
 
