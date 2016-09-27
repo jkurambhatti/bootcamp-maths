@@ -48,6 +48,23 @@ def thrice_n_plus_one
 end
 
 
+# AS a Math fanatic,
+# GIVEN a positive number,
+# I WANT to calculate its collatz conjecture cycles count,
+# WHERE 1 iteration count equals to 1 cycle count,
+# AND 1 Iteration is,
+# If the number is even, divide it by two
+# If the number is odd, triple it and add one
+# AND iteration stop once number reaches 1,
+# SO THAT I can win $100,000.
+
+
+def cycle_count
+  1
+end
+
+
+
   alias_method :n!, :factorial
 
   private

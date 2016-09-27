@@ -92,7 +92,19 @@ describe Maths::Number do
       expect(number.thrice_n_plus_one).to eq(0)
     end
 
-
   end
+
+
+# collatz conjecture
+
+describe "#cycle_count" do
+
+  it "should return 1 when given 1" do
+    number = Maths::Number.new(1)
+    expect(number.cycle_count).to eq(1)
+  end
+
+end
+
 
 end
