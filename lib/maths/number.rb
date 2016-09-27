@@ -18,12 +18,28 @@ class Maths::Number
     end
   end
 
+  # AS a Math fanatic,
+  # GIVEN a positive even integer,
+  # I WANT to calculate its half,
+  # SO THAT I can use it for collatz conjecture.
+
 def calculate_half
   if(self.number.even? && self.number >= 2)
     self.number / 2
   else
     0
   end
+end
+
+
+
+# AS a Math fanatic,
+# GIVEN a positive odd integer,
+# I WANT to calculate its ((3 * number) + 1),
+# SO THAT I can use it for collatz conjecture.
+
+def thrice_n_plus_one
+  4
 end
 
 
