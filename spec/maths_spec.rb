@@ -109,6 +109,18 @@ describe "#cycle_count" do
     expect(number.cycle_count).to eq(2)
   end
 
+  it "should return 8 when given 3" do
+  number = Maths::Number.new(3)
+  expect(number.cycle_count).to eq(8)
+end
+
+it "should return INFINITY when given 0" do
+  number = Maths::Number.new(0)
+  expect(number.cycle_count).to eq(Float::INFINITY)
+end
+
+
+
 
 end
 

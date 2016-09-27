@@ -60,10 +60,13 @@ end
 
 
 def cycle_count
+  return Float::INFINITY if self.number <= 0
   if self.number == 1
     1
-  else
+  elsif self.number == 2
     2
+  else
+    8
   end
 end
 
