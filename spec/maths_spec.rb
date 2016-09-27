@@ -71,10 +71,17 @@ describe Maths::Number do
 
 # return 3*n + 1 for positive odd intergers
   describe "#thrice_n_plus_one" do
+
     it "should return 4 when given 1" do
     number = Maths::Number.new(1)
     expect(number.thrice_n_plus_one).to eq(4)
     end
+
+    it "should return 0 when given 4" do
+      number = Maths::Number.new(4)
+      expect(number.thrice_n_plus_one).to eq(0)
+    end
+
   end
 
 end
