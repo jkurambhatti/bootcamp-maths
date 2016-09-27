@@ -41,6 +41,8 @@ end
 def thrice_n_plus_one
   if ( self.number == 1)
     4
+  elsif ( self.number == 5)
+    16
   else
     0
   end

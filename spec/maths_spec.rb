@@ -82,6 +82,10 @@ describe Maths::Number do
       expect(number.thrice_n_plus_one).to eq(0)
     end
 
+    it "should return 16 when given " do
+      number = Maths::Number.new(5)
+      expect(number.thrice_n_plus_one).to eq(16)
+    end
   end
 
 end
