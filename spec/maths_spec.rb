@@ -50,10 +50,17 @@ describe Maths::Number do
 
   # calculate half if the given integer is positive and even
   describe "#calculate_half"  do
+
     it "should return 2 when given 4" do
       number = Maths::Number.new(4)
       expect(number.calculate_half).to eq(2)
     end
+
+    it "should return 0 when given 3" do
+      number = Maths::Number.new(3)
+      expect(number.calculate_half).to eq(0)
+    end
+
   end
 
 end

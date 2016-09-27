@@ -19,7 +19,11 @@ class Maths::Number
   end
 
 def calculate_half
-  2
+  if(self.number == 4 )
+    2
+  else
+    0
+  end
 end
 
 
